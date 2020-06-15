@@ -1,0 +1,5 @@
+.main-header {
+    grid-column: content-start / content-end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
