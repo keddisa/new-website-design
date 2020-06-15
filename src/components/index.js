@@ -1,6 +1,6 @@
 import Layout from "../components/layout"
 import SEO from "./seo"
-import Cover from "./cover"
+import MainHeader from './main-header'
 import Skills from "./skills"
 import Journey from "./journey"
 import Portfolio from "./portfolio"
@@ -13,8 +13,8 @@ import TitleCard from "./title-card"
 import TextContainer from "./text-container"
 
 export {
+    MainHeader,
     Contact,
-    Cover,
     Header,
     Journey,
     Layout,

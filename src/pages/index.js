@@ -1,11 +1,11 @@
 import React from "react"
 
-import {Layout, SEO, Cover, Skills, Journey, Portfolio, Testimonials, Contact, TitleCard, TextContainer} from "../components"
+import {Layout, SEO, MainHeader, Skills, Journey, Portfolio, Testimonials, Contact, TitleCard, TextContainer} from "../components"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    {/* <Cover /> */}
+    <MainHeader />
     <TitleCard  title="Andrew Keddis"
                 subTitle="Make ideas happen"
                 align="left"
