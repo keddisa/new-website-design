@@ -3,7 +3,8 @@ import SEO from "./seo"
 import MainHeader from './main-header'
 import MyPlayground from './my-playground'
 import Skills from "./skills"
-import Journey from "./journey"
+import MyJourney from './my-journey'
+import JourneyCards from "./journey-cards"
 import Portfolio from "./portfolio"
 import PortfolioCard from "./portfolio-card"
 import Testimonials from "./testimonials"
@@ -16,14 +17,16 @@ import TextContainer from "./text-container"
 export {
     MainHeader,
     MyPlayground,
+    Skills,
+    MyJourney,
+    JourneyCards,
     Contact,
     Header,
-    Journey,
     Layout,
     Portfolio,
     PortfolioCard,
     SEO,
-    Skills,
+    
     Testimonials,
     TestimonialCard,
     TextContainer,

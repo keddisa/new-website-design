@@ -1,13 +1,11 @@
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
-  background: linear-gradient(to right bottom, rgba(250, 229, 150, 0.9), rgba(255, 241, 187, 0.9)); }
+  box-sizing: border-box; }
 
 body {
   font-family: sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #173e43;
   padding: 3rem;
   font-size: 1.5rem;
   box-sizing: border-box; }
@@ -43,7 +41,10 @@ a {
 .main-header {
   grid-column: content-start / content-end;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 2rem 0 2rem;
+  color: #dddfd4;
+  background: linear-gradient(to right bottom, rgba(38, 122, 159, 0.9), rgba(86, 157, 189, 0.9)); }
 
 .text-content-large {
   font-size: 4rem;
@@ -52,11 +53,19 @@ a {
   justify-self: center;
   text-align: center; }
 
+.my-playground {
+  grid-column: content-start / content-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 2rem 0 2rem;
+  color: #173e43;
+  background: linear-gradient(to right bottom, rgba(250, 229, 150, 0.9), rgba(255, 241, 187, 0.9)); }
+
 .title-aside-main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
-  padding-right: 5rem; }
+  gap: 2rem; }
 
 .section-title {
   position: -webkit-sticky;
@@ -67,9 +76,12 @@ a {
 h1 {
   margin: 0;
   line-height: 8rem;
-  font-size: 11rem;
-  justify-self: start;
-  align-self: flex-start; }
+  font-size: 11rem; }
+
+.justify-right {
+  text-align: end;
+  justify-self: end;
+  justify-content: end; }
 
 .text-container {
   display: grid;
@@ -113,7 +125,7 @@ h1 {
   grid-template-columns: 4rem 4rem 4.1rem 4rem; }
 
 .cover {
-  background-image: linear-gradient(to right bottom, rgba(63, 176, 172, 0.8), rgba(63, 176, 172, 0.8)), url(../images/cover-image.jpg);
+  background-image: linear-gradient(to right bottom, rgba(159, 168, 163, 0.8), rgba(159, 168, 163, 0.8)), url(../images/cover-image.jpg);
   background-size: cover;
   display: grid;
   grid-gap: 2rem;
@@ -167,8 +179,7 @@ h1 {
 
 .journey {
   padding: 0 3rem 5rem;
-  display: grid;
-  grid-column: content-start / content-end; }
+  display: grid; }
 
 .journey-cards {
   padding: 5rem 5rem 0rem;
@@ -193,7 +204,7 @@ h1 {
   grid-template-columns: 4rem 1fr; }
 
 .journey-icon {
-  fill: #3fb0ac; }
+  fill: #9fa8a3; }
 
 .journey-card-text {
   font-size: 2rem; }
@@ -206,6 +217,21 @@ h1 {
   @media only screen and (max-width: 37em) {
     .content-text {
       padding: 0rem; } }
+
+.my-journey {
+  grid-column: content-start / content-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 2rem 0 2rem;
+  color: #173e43;
+  background: linear-gradient(to right bottom, rgba(221, 223, 212, 0.9), rgba(245, 245, 245, 0.9)); }
+
+.text-content-large {
+  font-size: 4rem;
+  line-height: 16rem;
+  align-self: center;
+  justify-self: center;
+  text-align: center; }
 
 .main-content {
   display: grid;
@@ -221,7 +247,7 @@ h1 {
   justify-content: center; }
 
 .portfolio-card {
-  background-color: #87c8b2;
+  background-color: #c9d5ce;
   display: grid;
   grid-template-rows: 20rem;
   border-radius: 1rem;
@@ -308,7 +334,6 @@ h1 {
   height: 1.5rem; }
 
 .skills {
-  grid-column: content-start / content-end;
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -363,7 +388,7 @@ h1 {
   visibility: visible;
   outline: 1px solid transparent;
   /* fix for jagged edges in FF on hover transition */
-  background-color: #87c8b2; }
+  background-color: #c9d5ce; }
 
 .hexImage {
   display: block;

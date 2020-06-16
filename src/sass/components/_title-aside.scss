@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content;
-    padding-right: 5rem;
+    gap: 2rem;
 }
 
 .section-title {
@@ -16,6 +16,10 @@ h1 {
     margin: 0;
     line-height: 8rem;
     font-size: 11rem;
-    justify-self: start;
-    align-self: flex-start;
+}
+
+.justify-right {
+    text-align: end;
+    justify-self: end;
+    justify-content: end;
 }

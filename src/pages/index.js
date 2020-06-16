@@ -1,17 +1,13 @@
 import React from "react"
 
-import {Layout, SEO, MainHeader, MyPlayground, Skills, Journey, Portfolio, Testimonials, Contact, TitleAside, TextContainer} from "../components"
+import {Layout, SEO, MainHeader, MyPlayground, Portfolio, Testimonials, Contact, TitleAside, MyJourney} from "../components"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <MainHeader theme="theme-1"/>
     <MyPlayground />
-    <TitleAside  title="My Journey"
-                subTitle="How did I get here?"
-                align="center"
-                backgroundImage="journey-title"/>
-    <Journey />
+    <MyJourney />
     <TitleAside  title="Glance at my work"
                 subTitle="Check these samples out"
                 align="left"

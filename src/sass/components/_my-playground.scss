@@ -1,0 +1,8 @@
+.my-playground {
+    grid-column: content-start / content-end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 2rem 0 2rem;
+    color: $theme2-color-main-text;
+    background: linear-gradient(to right bottom, rgba($theme2-color-background-primary, .9), rgba($theme2-color-background-secondary, .9));
+}
