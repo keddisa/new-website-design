@@ -1,7 +1,6 @@
 import React from 'react';
 import PortfolioCard from './portfolio-card';
 import Technologies from '../technologies';
-import ConcentrationGame from '../images/concentration-game.jpg';
 
 const Portfolio = () => {
     const projects = [

@@ -1,9 +1,21 @@
+@font-face {
+  font-family: 'newpatagonia-normal';
+  src: url("../fonts/NewPatagonia/NewPatagonia-Normal.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'newpatagonia-regular';
+  src: url("../fonts/NewPatagonia/NewPatagonia-regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
 
 body {
-  font-family: sans-serif;
+  font-family: "newpatagonia-normal", "newpatagonia-regular", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   padding: 3rem;
@@ -103,15 +115,16 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem 2rem 0 2rem;
-  color: #116466;
-  background: linear-gradient(to right bottom, rgba(209, 232, 226, 0.9), rgba(181, 210, 203, 0.9)); }
+  color: #c89666;
+  background: linear-gradient(to right bottom, rgba(45, 84, 94, 0.9), rgba(18, 52, 59, 0.9)); }
 
 .contact-main {
   display: grid;
   justify-content: center;
   justify-items: center;
   align-items: end;
-  fill: #116466; }
+  gap: 10rem;
+  fill: #c89666; }
 
 .email-and-number {
   display: grid;
@@ -121,10 +134,11 @@ h1 {
   margin: 5rem 0; }
 
 .email-and-number-icon {
-  width: 5rem; }
+  width: 5rem;
+  align-self: center; }
 
 .email-and-number-text {
-  height: 6rem; }
+  height: 10rem; }
 
 .contact-icons {
   display: grid;
@@ -133,49 +147,9 @@ h1 {
   gap: 5rem;
   grid-template-columns: 4rem 4rem 4.1rem 4rem; }
 
-.cover {
-  background-image: linear-gradient(to right bottom, rgba(63, 176, 172, 0.8), rgba(63, 176, 172, 0.8)), url(../images/cover-image.jpg);
-  background-size: cover;
-  display: grid;
-  grid-gap: 2rem;
-  grid-column: content-start / content-end;
-  grid-template-rows: 1fr min-content min-content min-content 3fr;
-  color: #173e43;
-  background-attachment: fixed; }
-
-.cover-title {
-  font-size: 5rem;
-  align-self: center;
-  justify-self: center;
-  grid-column: 1 / -1;
-  grid-row: 2 / 3;
-  text-align: center;
-  margin-top: 3rem;
-  opacity: .8; }
-
-.cover-subtitle {
-  grid-row: 3 / 4;
-  font-size: 3rem;
-  text-align: center;
-  align-self: center;
-  justify-self: center; }
-  @media only screen and (max-width: 50em) {
-    .cover-subtitle {
-      font-size: 2rem; } }
-
-.cover-subtitle2 {
-  grid-row: 4 / 5;
-  font-size: 2rem;
-  text-align: center;
-  align-self: center;
-  justify-self: center;
-  padding: .5rem 2rem;
-  margin-top: 3rem;
-  opacity: .8; }
-
 .footer {
   background-color: #393f4d;
-  color: sans-serif;
+  color: "newpatagonia-normal", "newpatagonia-regular", sans-serif;
   grid-column: content-start / content-end;
   display: grid;
   grid-template-columns: 50% 1fr;

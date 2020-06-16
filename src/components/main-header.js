@@ -7,7 +7,7 @@ const MainHeader = () => {
                     titleTwo="KEDDIS"
                     justify="left"/>
         <div className="text-content-large">
-            Software Engineer <br/> Educator <br/> Business Professional <br/> Adventurer <br/> Traveler <br/> Exercise Junkie
+            Software Engineer <br/> Educator <br/> Business Professional <br/> Adventurer <br/> Traveler <br/> Athlete <br/> Adrenaline Junkie
         </div>
     </section>)
 }

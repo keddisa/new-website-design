@@ -12,6 +12,7 @@
     justify-content: center;
     justify-items: center;
     align-items: end; 
+    gap: 10rem;
     fill: $theme6-color-main-text;
 }
 
@@ -25,10 +26,11 @@
 
 .email-and-number-icon {
     width: 5rem;
+    align-self: center;
 }
 
 .email-and-number-text {
-    height: 6rem;
+    height: 10rem;
 }
 
 .contact-icons{

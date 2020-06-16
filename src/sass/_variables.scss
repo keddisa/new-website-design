@@ -46,12 +46,12 @@ $theme4-color-main-text: #05386b;
 $theme4-color-gray: #dddfd4;
 
 //Theme 5
-$theme6-color-background-primary: #D1E8E2;
-$theme6-color-background-secondary: #b5d2cb;
-$theme6-color-primary: #116466;
-$theme6-color-secondary: #116466;
-$theme6-color-title-text: #116466;
-$theme6-color-main-text: #116466;
+$theme6-color-background-primary: #2d545e;
+$theme6-color-background-secondary: #12343b;
+$theme6-color-primary: #e1b382;
+$theme6-color-secondary: #c89666;
+$theme6-color-title-text: #c89666;
+$theme6-color-main-text: #c89666;
 $theme6-color-gray: #dddfd4;
 
 // Theme 6
@@ -63,9 +63,23 @@ $theme3-color-title-text: #090A0A;
 $theme3-color-main-text: #dddfd4;
 $theme3-color-gray: #dddfd4;
 
+@font-face {
+    font-family: 'newpatagonia-normal';
+    src: url('../fonts/NewPatagonia/NewPatagonia-Normal.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
 
-//Fonts
-$font-main-text: sans-serif;
+@font-face {
+    font-family: 'newpatagonia-regular';
+    src: url('../fonts/NewPatagonia/NewPatagonia-regular.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Fonts https://www.haleyfiege.fun/fonts
+$font-main-text: 'newpatagonia-normal', 'newpatagonia-regular', sans-serif;
+$font-title-text: 'newpatagonia-normal', 'newpatagonia-regular', sans-serif;
 
 
 //Responsive breakpoints
