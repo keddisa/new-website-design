@@ -1,11 +1,6 @@
 .portfolio-card{
-    background-color: $color-secondary;
     display: grid;
-    grid-template-rows: 20rem;
     border-radius: 1rem;
-    border: solid black 1px;
-    color: $color-title-text;
-
     transition: all .3s;
   
     &:hover {
@@ -15,23 +10,6 @@
   }
 }
 
-.portfolio-card-image {
-    width: 90%;
-    height: 90%;
-    justify-self: center;
-    align-self: center;
-    background-size: cover;
-    grid-column: 1/-1;
-    z-index: 55;
-    border-radius: 1rem;
-}
-
-.portfolio-card-display {
-    display: grid;
-    grid-template-rows: 1fr min-content 2fr;
-    border-radius: 1rem;
-}
-
 .portfolio-card-content{
     padding: 0 2rem 2rem;
     display: grid;
@@ -39,15 +17,11 @@
     font-size: 1.2rem;
 }
 
-.portfolio-card-title {
-    justify-self: center;
-    font-size: 2rem;
-}
 
 .portfolio-card-links {
     display: grid;
     padding-top: 1rem;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 .portfolio-card-links-icons {
@@ -61,12 +35,12 @@
     padding-top: 1.5rem;
     grid-gap: 1.5rem;
     justify-content: center;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 .portfolio-card-tech-icons {
     display: grid;
-    grid-gap: 1.5rem;
+    grid-gap: 3rem;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 3rem);
 }
@@ -74,7 +48,7 @@
 .portfolio-card-tech-icon {
     border: black;
     border-radius: 3px;
-    width: 3rem;
+    width: 5rem;
     justify-self: center;
     transition: all .3s;
   
@@ -86,7 +60,7 @@
 }
 
 .portfolio-card-icon {
-    width: 3rem;
+    width: 5rem;
     justify-self: center;
     cursor: pointer;
     transition: all .3s;
@@ -104,4 +78,5 @@
     justify-self: center;
     width: 100%;
     height: 1.5rem;
+    margin-top: 3rem;
 }

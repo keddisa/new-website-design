@@ -2,9 +2,6 @@ import React from 'react';
 
 
 const PortfolioCard = (props) => {
-    React.useEffect(()=>{
-        console.log(props)
-    })
     const renderTechnologies = () => {
         return props.project.technologies.map((technology, index) => {
                 return <div className="portfolio-card-tech-icon" key={index}>{technology}</div>
@@ -12,17 +9,15 @@ const PortfolioCard = (props) => {
     }
 
     return(<div className="portfolio-card">
-        <img className="portfolio-card-image" src={props.project.displayImage} alt="" />   
-        <div className="portfolio-card-title">{props.project.title}</div>
-        <img className="portfolio-card-line" src={require("../images/grey-line-horizontal.png")} alt="application development image." />  
+        <div className="text-content-large">{props.project.title}</div>
         <div className="portfolio-card-content">
-        <div className="portfolio-card-description">{props.project.description}</div>
+        <div className="text-content">{props.project.description}</div>
         <div className="portfolio-card-technologies">
-            <div className="portfolio-card-tech-text">Technologies:</div>
+            <div className="text-content">Technologies:</div>
             <div className="portfolio-card-tech-icons">{renderTechnologies()}</div>        
         </div>
         <div className="portfolio-card-links">
-        <div className="portfolio-card-links-text">Links:</div>
+        <div className="text-content">Links:</div>
         <div className="portfolio-card-links-icons">
             <a className="portfolio-card-icon" href={props.project.liveLink} target="blank">
                 <svg  viewBox="0 0 26 26" >
@@ -101,8 +96,9 @@ const PortfolioCard = (props) => {
                 </a>
         </div>
         
+        
         </div>
-
+        <img className="portfolio-card-line" src={require("../images/grey-line-horizontal.png")} alt="application development image." />  
         </div>
        
     </div>)

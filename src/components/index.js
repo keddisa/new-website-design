@@ -5,6 +5,7 @@ import MyPlayground from './my-playground'
 import Skills from "./skills"
 import MyJourney from './my-journey'
 import JourneyCards from "./journey-cards"
+import MyPortfolio from "./my-portfolio"
 import Portfolio from "./portfolio"
 import PortfolioCard from "./portfolio-card"
 import Testimonials from "./testimonials"
@@ -23,6 +24,7 @@ export {
     Contact,
     Header,
     Layout,
+    MyPortfolio,
     Portfolio,
     PortfolioCard,
     SEO,

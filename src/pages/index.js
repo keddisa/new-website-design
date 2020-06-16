@@ -1,6 +1,6 @@
 import React from "react"
 
-import {Layout, SEO, MainHeader, MyPlayground, Portfolio, Testimonials, Contact, TitleAside, MyJourney} from "../components"
+import {Layout, SEO, MainHeader, MyPlayground, MyPortfolio, Testimonials, Contact, TitleAside, MyJourney} from "../components"
 
 const IndexPage = () => (
   <Layout>
@@ -8,11 +8,11 @@ const IndexPage = () => (
     <MainHeader theme="theme-1"/>
     <MyPlayground />
     <MyJourney />
+    <MyPortfolio />
     <TitleAside  title="Glance at my work"
                 subTitle="Check these samples out"
                 align="left"
                 backgroundImage="portfolio-title"/>
-    <Portfolio />
     <TitleAside  title="Testimonials"
                 subTitle="What others have said"
                 align="right"

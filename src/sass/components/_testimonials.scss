@@ -1,6 +1,17 @@
 .testimonials {
-    display: grid;
     grid-column: content-start / content-end;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, .3fr));
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    color: $theme5-color-main-text;
+    background: linear-gradient(to right bottom, rgba($theme5-color-background-primary, .9), rgba($theme5-color-background-secondary, .9));
 }
+
+.text-content-large {
+    font-size: 4rem;
+    line-height: 16rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+

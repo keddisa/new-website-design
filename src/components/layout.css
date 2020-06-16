@@ -35,8 +35,7 @@ a {
   font-size: 2rem;
   align-self: center;
   justify-self: center;
-  text-align: center;
-  margin-top: 2rem; }
+  text-align: center; }
 
 .main-header {
   grid-column: content-start / content-end;
@@ -125,7 +124,7 @@ h1 {
   grid-template-columns: 4rem 4rem 4.1rem 4rem; }
 
 .cover {
-  background-image: linear-gradient(to right bottom, rgba(159, 168, 163, 0.8), rgba(159, 168, 163, 0.8)), url(../images/cover-image.jpg);
+  background-image: linear-gradient(to right bottom, rgba(63, 176, 172, 0.8), rgba(63, 176, 172, 0.8)), url(../images/cover-image.jpg);
   background-size: cover;
   display: grid;
   grid-gap: 2rem;
@@ -203,7 +202,7 @@ h1 {
   grid-template-columns: 4rem 1fr; }
 
 .journey-icon {
-  fill: #9fa8a3; }
+  fill: #3fb0ac; }
 
 .journey-card-text {
   font-size: 2rem; }
@@ -237,41 +236,28 @@ h1 {
   grid-column: content-start/ content-end;
   grid-template-columns: [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end]; }
 
+.my-portfolio {
+  grid-column: content-start / content-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 2rem 0 2rem;
+  color: #05386b;
+  background: linear-gradient(to right bottom, rgba(92, 219, 149, 0.9), rgba(119, 219, 164, 0.9)); }
+
 .portfolio {
   display: grid;
-  grid-column: content-start / content-end;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 0.25fr));
   grid-gap: 3rem;
   padding: 5rem 0;
   justify-content: center; }
 
 .portfolio-card {
-  background-color: #c9d5ce;
   display: grid;
-  grid-template-rows: 20rem;
   border-radius: 1rem;
-  border: solid black 1px;
-  color: #173e43;
   transition: all .3s; }
   .portfolio-card:hover {
     transform: translateY(-0.1rem) scale(1.005);
     filter: brightness(95%);
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); }
-
-.portfolio-card-image {
-  width: 90%;
-  height: 90%;
-  justify-self: center;
-  align-self: center;
-  background-size: cover;
-  grid-column: 1/-1;
-  z-index: 55;
-  border-radius: 1rem; }
-
-.portfolio-card-display {
-  display: grid;
-  grid-template-rows: 1fr min-content 2fr;
-  border-radius: 1rem; }
 
 .portfolio-card-content {
   padding: 0 2rem 2rem;
@@ -279,14 +265,10 @@ h1 {
   grid-gap: 1rem;
   font-size: 1.2rem; }
 
-.portfolio-card-title {
-  justify-self: center;
-  font-size: 2rem; }
-
 .portfolio-card-links {
   display: grid;
   padding-top: 1rem;
-  grid-template-columns: min-content 1fr; }
+  grid-template-columns: 1fr 3fr; }
 
 .portfolio-card-links-icons {
   display: grid;
@@ -298,18 +280,18 @@ h1 {
   padding-top: 1.5rem;
   grid-gap: 1.5rem;
   justify-content: center;
-  grid-template-columns: min-content 1fr; }
+  grid-template-columns: 1fr 3fr; }
 
 .portfolio-card-tech-icons {
   display: grid;
-  grid-gap: 1.5rem;
+  grid-gap: 3rem;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 3rem); }
 
 .portfolio-card-tech-icon {
   border: black;
   border-radius: 3px;
-  width: 3rem;
+  width: 5rem;
   justify-self: center;
   transition: all .3s; }
   .portfolio-card-tech-icon:hover {
@@ -317,7 +299,7 @@ h1 {
     filter: brightness(70%); }
 
 .portfolio-card-icon {
-  width: 3rem;
+  width: 5rem;
   justify-self: center;
   cursor: pointer;
   transition: all .3s; }
@@ -330,7 +312,8 @@ h1 {
 .portfolio-card-line {
   justify-self: center;
   width: 100%;
-  height: 1.5rem; }
+  height: 1.5rem;
+  margin-top: 3rem; }
 
 .skills {
   display: grid;
@@ -387,7 +370,7 @@ h1 {
   visibility: visible;
   outline: 1px solid transparent;
   /* fix for jagged edges in FF on hover transition */
-  background-color: #c9d5ce; }
+  background-color: #87c8b2; }
 
 .hexImage {
   display: block;
@@ -461,10 +444,19 @@ h1 {
   stroke-width: .257; }
 
 .testimonials {
-  display: grid;
   grid-column: content-start / content-end;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 0.3fr));
-  justify-content: center; }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+  color: #4056a1;
+  background: linear-gradient(to right bottom, rgba(239, 226, 186, 0.9), rgba(255, 249, 233, 0.9)); }
+
+.text-content-large {
+  font-size: 4rem;
+  line-height: 16rem;
+  align-self: center;
+  justify-self: center;
+  text-align: center; }
 
 .testimonial-card {
   display: grid;
