@@ -3,3 +3,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
+.text-content-large {
+    font-size: 4rem;
+    line-height: 16rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}

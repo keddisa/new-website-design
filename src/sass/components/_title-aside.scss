@@ -1,0 +1,21 @@
+.title-aside-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    padding-right: 5rem;
+}
+
+.section-title {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    display: grid;
+}
+
+h1 {
+    margin: 0;
+    line-height: 8rem;
+    font-size: 11rem;
+    justify-self: start;
+    align-self: flex-start;
+}

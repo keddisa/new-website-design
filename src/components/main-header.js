@@ -1,12 +1,12 @@
 import React from 'react'
+import {TitleAside} from '../components'
 
 const MainHeader = () => {
     return(<section className="main-header">
-        <div>
-            Section 1
-        </div>
-        <div>
-            Section 2
+        <TitleAside titleOne="ANDREW"
+                    titleTwo="KEDDIS"/>
+        <div className="text-content-large">
+            Software Engineer <br/> Educator <br/> Business Professional <br/> Adventurer <br/> Traveler <br/> Exercise Junkie
         </div>
     </section>)
 }
