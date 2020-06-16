@@ -448,15 +448,8 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem;
-  color: #4056a1;
-  background: linear-gradient(to right bottom, rgba(239, 226, 186, 0.9), rgba(255, 249, 233, 0.9)); }
-
-.text-content-large {
-  font-size: 4rem;
-  line-height: 16rem;
-  align-self: center;
-  justify-self: center;
-  text-align: center; }
+  color: #116466;
+  background: linear-gradient(to right bottom, rgba(209, 232, 226, 0.9), rgba(181, 210, 203, 0.9)); }
 
 .testimonial-card {
   display: grid;
