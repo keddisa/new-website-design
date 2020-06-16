@@ -178,15 +178,14 @@ h1 {
   grid-column: content-start / content-end; }
 
 .journey {
-  padding: 0 3rem 5rem;
   display: grid; }
 
 .journey-cards {
-  padding: 5rem 5rem 0rem;
+  padding: 5rem 3rem;
   display: grid;
   grid-gap: 3rem;
   grid-row-gap: 5rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 0.45fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
   @media only screen and (max-width: 50em) {
     .journey-cards {
       padding-right: 3rem;
@@ -222,7 +221,7 @@ h1 {
   grid-column: content-start / content-end;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem;
   color: #173e43;
   background: linear-gradient(to right bottom, rgba(221, 223, 212, 0.9), rgba(245, 245, 245, 0.9)); }
 
