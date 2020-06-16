@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {horizontalLine} from '../images/grey-line-horizontal.png'
 
 const PortfolioCard = (props) => {
     const renderTechnologies = () => {
@@ -98,7 +98,7 @@ const PortfolioCard = (props) => {
         
         
         </div>
-        <img className="portfolio-card-line" src={require("../images/grey-line-horizontal.png")} alt="application development image." />  
+        <img className="portfolio-card-line" src={horizontalLine} alt="application development image." />  
         </div>
        
     </div>)

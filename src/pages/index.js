@@ -1,6 +1,6 @@
 import React from "react"
 
-import {Layout, SEO, MainHeader, MyPlayground, MyPortfolio, Testimonials, Contact, TitleAside, MyJourney} from "../components"
+import {Layout, SEO, MainHeader, MyPlayground, MyPortfolio, Testimonials, Contact, MyJourney} from "../components"
 
 const IndexPage = () => (
   <Layout>
