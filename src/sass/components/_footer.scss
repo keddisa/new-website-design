@@ -1,9 +1,8 @@
 .footer {
-    background-color: #393f4d;
-    color: $font-main-text;
+    background-color: $theme6-color-main-text;
+    color: $theme6-color-background-primary;
     grid-column: content-start / content-end;
     display: grid;
     grid-template-columns: 50% 1fr;
     padding: 3rem 2rem;
-    margin-top: 2rem;
 }

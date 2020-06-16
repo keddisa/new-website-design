@@ -40,7 +40,7 @@ body {
   grid-column: content-start/ content-end; }
 
 a {
-  color: rgba(0, 140, 255, 0.726);
+  color: #2d545e;
   text-decoration: none; }
 
 .text-content {
@@ -53,7 +53,7 @@ a {
   grid-column: content-start / content-end;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem;
   color: #dddfd4;
   background: linear-gradient(to right bottom, rgba(38, 122, 159, 0.9), rgba(86, 157, 189, 0.9)); }
 
@@ -148,13 +148,12 @@ h1 {
   grid-template-columns: 4rem 4rem 4.1rem 4rem; }
 
 .footer {
-  background-color: #393f4d;
-  color: "newpatagonia-normal", "newpatagonia-regular", sans-serif;
+  background-color: #c89666;
+  color: #2d545e;
   grid-column: content-start / content-end;
   display: grid;
   grid-template-columns: 50% 1fr;
-  padding: 3rem 2rem;
-  margin-top: 2rem; }
+  padding: 3rem 2rem; }
 
 .header {
   display: grid;
