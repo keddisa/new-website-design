@@ -1,29 +1,41 @@
 .contact {
-    padding: 5rem 0;
-    display: grid;
-    grid-gap: 5rem;
     grid-column: content-start / content-end;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 2rem 0 2rem;
+    color: $theme6-color-main-text;
+    background: linear-gradient(to right bottom, rgba($theme6-color-background-primary, .9), rgba($theme6-color-background-secondary, .9));
+}
+
+.contact-main {
+    display: grid;
     justify-content: center;
     justify-items: center;
-    text-align: center;
-}
-
-.contact-content {
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 3rem 1fr;
     align-items: end; 
-    fill: $color-main-text;
+    fill: $theme6-color-main-text;
 }
 
-.contact-email-and-number {
+.email-and-number {
+    display: grid;
+    grid-template-columns: 10% 50% 20%;
+    gap: 3rem;
     height: 4rem;
+    margin: 5rem 0;
+}
+
+.email-and-number-icon {
+    width: 5rem;
+}
+
+.email-and-number-text {
+    height: 6rem;
 }
 
 .contact-icons{
     display: grid;
     padding-top: 3rem;
-    grid-gap: 5rem;
+    margin: 15rem 0;
+    gap: 5rem;
     grid-template-columns: 4rem 4rem 4.1rem 4rem;
 }
 

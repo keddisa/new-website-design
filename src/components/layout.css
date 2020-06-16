@@ -99,28 +99,38 @@ h1 {
   line-height: 12rem; }
 
 .contact {
-  padding: 5rem 0;
-  display: grid;
-  grid-gap: 5rem;
   grid-column: content-start / content-end;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 2rem 0 2rem;
+  color: #116466;
+  background: linear-gradient(to right bottom, rgba(209, 232, 226, 0.9), rgba(181, 210, 203, 0.9)); }
+
+.contact-main {
+  display: grid;
   justify-content: center;
   justify-items: center;
-  text-align: center; }
-
-.contact-content {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 3rem 1fr;
   align-items: end;
-  fill: #173e43; }
+  fill: #116466; }
 
-.contact-email-and-number {
-  height: 4rem; }
+.email-and-number {
+  display: grid;
+  grid-template-columns: 10% 50% 20%;
+  gap: 3rem;
+  height: 4rem;
+  margin: 5rem 0; }
+
+.email-and-number-icon {
+  width: 5rem; }
+
+.email-and-number-text {
+  height: 6rem; }
 
 .contact-icons {
   display: grid;
   padding-top: 3rem;
-  grid-gap: 5rem;
+  margin: 15rem 0;
+  gap: 5rem;
   grid-template-columns: 4rem 4rem 4.1rem 4rem; }
 
 .cover {
@@ -221,8 +231,8 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem;
-  color: #173e43;
-  background: linear-gradient(to right bottom, rgba(221, 223, 212, 0.9), rgba(245, 245, 245, 0.9)); }
+  color: #dddfd4;
+  background: linear-gradient(to right bottom, rgba(9, 10, 10, 0.9), rgba(21, 22, 23, 0.9)); }
 
 .text-content-large {
   font-size: 4rem;
@@ -448,8 +458,8 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem;
-  color: #116466;
-  background: linear-gradient(to right bottom, rgba(209, 232, 226, 0.9), rgba(181, 210, 203, 0.9)); }
+  color: #173e43;
+  background: linear-gradient(to right bottom, rgba(221, 223, 212, 0.9), rgba(245, 245, 245, 0.9)); }
 
 .testimonial-card {
   display: grid;
