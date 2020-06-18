@@ -3,7 +3,7 @@ import React from 'react';
 const TestimonialCard = ({headshotImage, name, title, content}) => {
     return(<div className="testimonial-card">
             <img src={headshotImage} alt="testimonial-image." className="testimonial-headshot"/>
-            <div className="text-content">
+            <div className="text-content testimonial-text">
                 {content}
             </div>
             <div className="text-content testimonial-name">{name}</div>

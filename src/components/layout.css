@@ -520,6 +520,9 @@ h1 {
   justify-self: center;
   align-self: center; }
 
+.testimonial-text {
+  text-align: left; }
+
 .testimonial-name,
 .testimonial-title {
   font-weight: bold;
