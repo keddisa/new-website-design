@@ -5,6 +5,8 @@ const MyJourney = () => {
     return(<section className="my-journey">
         <TitleAside titleOne="MY JO"
                     titleTwo="URNEY"
+                    titleOneVertical="MY"
+                    titleTwoVertical="JOURNEY"
                     justify="left"/> 
         <JourneyCards />   
     </section>)

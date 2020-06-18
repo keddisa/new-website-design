@@ -6,6 +6,7 @@ const Testimonials = () => {
     return (<div className="testimonials">
         <TitleAside titleOne="TESTIM"
             titleTwo="ONIALS"
+            titleOneVertical="TESTIMONIALS"
             justify="left"/> 
         <div>
         <TestimonialCard    headshotImage={HeadshotImage}

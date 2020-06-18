@@ -6,6 +6,9 @@ const MyPortfolio = () => {
         <Portfolio />
         <TitleAside titleOne="CHECK"
                     titleTwo="'EM OUT"
+                    titleOneVertical="CHECK"
+                    titleTwoVertical="'EM"
+                    titleThreeVertical="OUT"
                     justify="right"/>     
     </section>)
 }

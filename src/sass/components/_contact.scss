@@ -5,6 +5,10 @@
     padding: 2rem 2rem 0 2rem;
     color: $theme6-color-main-text;
     background: linear-gradient(to right bottom, rgba($theme6-color-background-primary, .9), rgba($theme6-color-background-secondary, .9));
+
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: 1fr 12rem;
+    }
 }
 
 .contact-main {
@@ -14,6 +18,7 @@
     align-items: end; 
     gap: 10rem;
     fill: $theme6-color-main-text;
+    margin: 5rem;
 }
 
 .email-and-number {

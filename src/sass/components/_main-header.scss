@@ -5,6 +5,12 @@
     padding: 2rem;
     color: $theme1-color-main-text;
     background: linear-gradient(to right bottom, rgba($theme1-color-background-primary, .9), rgba($theme1-color-background-secondary, .9));
+    
+    @media only screen and (max-width: $bp-large) {
+        grid-template-columns: 12rem 1fr;
+        margin:0;
+        padding: 0;
+    }
 }
 
 .text-content-large {

@@ -10,6 +10,30 @@
     position: sticky;
     top: 4rem;
     display: grid;
+    padding-bottom: 3rem;
+    @media only screen and (max-width: $bp-large) {
+        // position: static !important;
+        grid-template-columns: min-content min-content min-content;
+        text-orientation: mixed;
+        writing-mode: vertical-lr;
+        transform: rotate(-180deg);
+    }
+}
+
+.title-one,
+.title-two {
+    @media only screen and (max-width: $bp-large) {
+        display: none;
+    }
+}
+
+.title-one-vertical,
+.title-two-vertical {
+    display: none;
+    @media only screen and (max-width: $bp-large) {
+        display: block;
+        margin: 2rem;
+    }
 }
 
 h1 {
@@ -22,4 +46,11 @@ h1 {
     text-align: end;
     justify-self: end;
     justify-content: end;
+
+    @media only screen and (max-width: $bp-large) {
+        text-align: start;
+        justify-self: start;
+        align-self: start;
+        align-content: start;
+    }
 }

@@ -6,6 +6,8 @@ const MyPlayground = () => {
         <Skills />
         <TitleAside titleOne="MY PLAY"
                     titleTwo="GROUND"
+                    titleOneVertical="MY"
+                    titleTwoVertical="PLAYGROUND"
                     justify="right"/>     
     </section>)
 }

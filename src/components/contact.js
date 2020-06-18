@@ -55,6 +55,9 @@ const Contact = () => {
         </div>
         <TitleAside titleOne="GET IN"
                     titleTwo="TOUCH"
+                    titleOneVertical="GET"
+                    titleTwoVertical="IN"
+                    titleThreeVertical="TOUCH"
                     justify="right"/>
     </div>)
 }

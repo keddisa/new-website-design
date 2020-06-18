@@ -31,9 +31,6 @@ body {
 .app {
   display: grid;
   grid-template-columns: [full-start] 1fr [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end] 1fr [full-end]; }
-  @media only screen and (max-width: 37em) {
-    .app {
-      grid-template-columns: [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end]; } }
 
 .main {
   display: grid;
@@ -56,6 +53,11 @@ a {
   padding: 2rem;
   color: #dddfd4;
   background: linear-gradient(to right bottom, rgba(38, 122, 159, 0.9), rgba(86, 157, 189, 0.9)); }
+  @media only screen and (max-width: 46.8em) {
+    .main-header {
+      grid-template-columns: 12rem 1fr;
+      margin: 0;
+      padding: 0; } }
 
 .text-content-large {
   font-size: 4rem;
@@ -71,6 +73,9 @@ a {
   padding: 2rem 2rem 0 2rem;
   color: #173e43;
   background: linear-gradient(to right bottom, rgba(250, 229, 150, 0.9), rgba(255, 241, 187, 0.9)); }
+  @media only screen and (max-width: 46.8em) {
+    .my-playground {
+      grid-template-columns: 1fr 12rem; } }
 
 .title-aside-main {
   display: grid;
@@ -82,7 +87,28 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 4rem;
-  display: grid; }
+  display: grid;
+  padding-bottom: 3rem; }
+  @media only screen and (max-width: 46.8em) {
+    .section-title {
+      grid-template-columns: min-content min-content min-content;
+      text-orientation: mixed;
+      writing-mode: vertical-lr;
+      transform: rotate(-180deg); } }
+
+@media only screen and (max-width: 46.8em) {
+  .title-one,
+  .title-two {
+    display: none; } }
+
+.title-one-vertical,
+.title-two-vertical {
+  display: none; }
+  @media only screen and (max-width: 46.8em) {
+    .title-one-vertical,
+    .title-two-vertical {
+      display: block;
+      margin: 2rem; } }
 
 h1 {
   margin: 0;
@@ -93,6 +119,12 @@ h1 {
   text-align: end;
   justify-self: end;
   justify-content: end; }
+  @media only screen and (max-width: 46.8em) {
+    .justify-right {
+      text-align: start;
+      justify-self: start;
+      align-self: start;
+      align-content: start; } }
 
 .text-container {
   display: grid;
@@ -117,6 +149,9 @@ h1 {
   padding: 2rem 2rem 0 2rem;
   color: #c89666;
   background: linear-gradient(to right bottom, rgba(45, 84, 94, 0.9), rgba(18, 52, 59, 0.9)); }
+  @media only screen and (max-width: 46.8em) {
+    .contact {
+      grid-template-columns: 1fr 12rem; } }
 
 .contact-main {
   display: grid;
@@ -124,7 +159,8 @@ h1 {
   justify-items: center;
   align-items: end;
   gap: 10rem;
-  fill: #c89666; }
+  fill: #c89666;
+  margin: 5rem; }
 
 .email-and-number {
   display: grid;
@@ -159,17 +195,15 @@ h1 {
   display: grid;
   grid-column: content-start / content-end; }
 
-.journey {
-  display: grid; }
-
 .journey-cards {
   padding: 5rem 3rem;
   display: grid;
   grid-gap: 3rem;
   grid-row-gap: 5rem;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 46.8em) {
     .journey-cards {
+      margin: 5rem;
       padding-right: 3rem;
       padding-left: 3rem;
       padding-bottom: 5rem; } }
@@ -192,7 +226,7 @@ h1 {
 
 .content-text {
   padding: 5rem; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 46.8em) {
     .content-text {
       padding: 3rem; } }
   @media only screen and (max-width: 37em) {
@@ -206,6 +240,9 @@ h1 {
   padding: 2rem;
   color: #dddfd4;
   background: linear-gradient(to right bottom, rgba(9, 10, 10, 0.9), rgba(21, 22, 23, 0.9)); }
+  @media only screen and (max-width: 46.8em) {
+    .my-journey {
+      grid-template-columns: 12rem 1fr; } }
 
 .text-content-large {
   font-size: 4rem;
@@ -226,6 +263,9 @@ h1 {
   padding: 2rem 2rem 0 2rem;
   color: #05386b;
   background: linear-gradient(to right bottom, rgba(92, 219, 149, 0.9), rgba(119, 219, 164, 0.9)); }
+  @media only screen and (max-width: 46.8em) {
+    .my-portfolio {
+      grid-template-columns: 1fr 12rem; } }
 
 .portfolio {
   display: grid;
@@ -381,7 +421,7 @@ h1 {
     margin-left: 10%;
     /* = width of .hex / 2  to indent even rows */ } }
 
-@media (max-width: 1100px) and (min-width: 750px) {
+@media (max-width: 1100px) and (min-width: 749px) {
   /* <- 4-3  hexagons per row */
   #hexGrid {
     padding-bottom: 5.5%; }
@@ -393,7 +433,31 @@ h1 {
     margin-left: 12.5%;
     /* = width of .hex / 2  to indent even rows */ } }
 
-@media (max-width: 420px) and (min-width: 300px) {
+@media (max-width: 749px) and (min-width: 630px) {
+  /* <- 5-4  hexagons per row */
+  #hexGrid {
+    padding-bottom: 4.4%; }
+  .hex {
+    width: 20%;
+    /* = 100 / 5 */ }
+  .hex:nth-child(9n+6) {
+    /* first hexagon of even rows */
+    margin-left: 10%;
+    /* = width of .hex / 2  to indent even rows */ } }
+
+@media (max-width: 630px) and (min-width: 420px) {
+  /* <- 4-3  hexagons per row */
+  #hexGrid {
+    padding-bottom: 5.5%; }
+  .hex {
+    width: 25%;
+    /* = 100 / 4 */ }
+  .hex:nth-child(7n+5) {
+    /* first hexagon of even rows */
+    margin-left: 12.5%;
+    /* = width of .hex / 2  to indent even rows */ } }
+
+@media (max-width: 420px) {
   /* <- 3-2  hexagons per row */
   #hexGrid {
     padding-bottom: 7.4%; }
@@ -433,6 +497,9 @@ h1 {
   padding: 2rem;
   color: #173e43;
   background: linear-gradient(to right bottom, rgba(221, 223, 212, 0.9), rgba(245, 245, 245, 0.9)); }
+  @media only screen and (max-width: 46.8em) {
+    .testimonials {
+      grid-template-columns: 12rem 1fr; } }
 
 .testimonial-card {
   display: grid;
@@ -448,4 +515,5 @@ h1 {
 
 .testimonial-name,
 .testimonial-title {
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }

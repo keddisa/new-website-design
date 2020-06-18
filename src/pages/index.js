@@ -5,7 +5,7 @@ import {Layout, SEO, MainHeader, MyPlayground, MyPortfolio, Testimonials, Contac
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <MainHeader theme="theme-1"/>
+    <MainHeader />
     <MyPlayground />
     <MyJourney />
     <MyPortfolio />
