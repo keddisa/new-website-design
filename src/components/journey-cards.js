@@ -7,7 +7,7 @@ const JourneyCards = () => {
             <title>software developer.</title>
             <path d="M32.639 17.561c0 0-4.592-4.682-10.92-4.682-6.183 0-12.295 4.682-12.295 4.682l-3.433-1.433v4.204c0.541 0.184 0.937 0.682 0.937 1.285 0 0.609-0.404 1.108-0.953 1.288l1.015 2.831h-2.996l1.024-2.855c-0.492-0.209-0.836-0.695-0.836-1.264 0-0.557 0.334-1.031 0.811-1.247v-4.659l-4.993-2.082 21.969-9.861 20.156 9.985-9.486 3.808zM21.469 15.251c6.366 0 9.486 3.37 9.486 3.37v6.99c0 0-3.245 2.621-9.985 2.621s-8.987-2.621-8.987-2.621v-6.99c0 0 3.12-3.37 9.486-3.37zM21.344 26.734c4.412 0 7.989-0.895 7.989-1.997s-3.577-1.997-7.989-1.997-7.988 0.895-7.988 1.997 3.576 1.997 7.988 1.997z"></path>
             </svg>
-            <div className="journey-card-text">
+            <div className="text-content journey-card-text">
                 On top of my software development training, I am educated as an Electrical Engineer and hold an MBA degree. I also teach software development
             </div>
         </div>
@@ -16,7 +16,7 @@ const JourneyCards = () => {
             <title>engineer.</title>
             <path d="M10 6c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6zM24.002 14h-1.107l-6.222 12.633 2.327-11.633-3-3-3 3 2.327 11.633-6.222-12.633h-1.107c-3.998 0-3.998 2.687-3.998 6v10h24v-10c0-3.313 0-6-3.998-6z"></path>
             </svg>
-            <div className="journey-card-text">
+            <div className="text-content journey-card-text">
             Worked in 6 countries for various companies in the technology field. I have worked as a software developer, engineer, and a business development professional                </div>
         </div>
         <div className="journey-card">
@@ -24,7 +24,7 @@ const JourneyCards = () => {
             <title>international.</title>
             <path d="M24 19.999l-5.713-5.713 13.713-10.286-4-4-17.141 6.858-5.397-5.397c-1.556-1.556-3.728-1.928-4.828-0.828s-0.727 3.273 0.828 4.828l5.396 5.396-6.858 17.143 4 4 10.287-13.715 5.713 5.713v7.999h4l2-6 6-2v-4l-7.999 0z"></path>
             </svg>
-            <div className="journey-card-text">
+            <div className="text-content journey-card-text">
             Traveled to 30+ countries learning, working and exploring cultures. I've interacted and worked with people from various backgrounds                </div>
         </div>
         <div className="journey-card">
@@ -39,7 +39,7 @@ const JourneyCards = () => {
                     c3.27,0,5.93-2.66,5.93-5.929V8.465C60,5.195,57.34,2.535,54.072,2.535z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
         </svg>
 
-            <div className="journey-card-text">
+            <div className="text-content journey-card-text">
                 I speak 3 languages..<br/> Did you know that being multilingual changes the brain structure and helps with processing information?
             </div>
         </div>
@@ -71,7 +71,7 @@ const JourneyCards = () => {
                 c-20.565-9.023-44.521,0.313-53.533,20.854C348.239,54.685,357.589,78.632,378.124,87.655z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
         </svg>
 
-            <div className="journey-card-text">
+            <div className="text-content journey-card-text">
             I enjoy a good exercise, and I am an avid runner and triathlete. I have completed several marathons, ultramarathons and ironman races                </div>
         </div>
         <div className="journey-card">
@@ -80,7 +80,7 @@ const JourneyCards = () => {
         <path d="M 299.882812 212.117188 C 249.160156 161.394531 232.207031 87.738281 255.636719 19.894531 C 257.222656 15.3125 256.488281 10.246094 253.675781 6.292969 C 250.859375 2.34375 246.308594 0 241.460938 0 L 239.933594 0 C 178.507812 0 128.535156 49.972656 128.535156 111.398438 L 128.535156 207.792969 C 128.535156 217.238281 120.847656 224.925781 111.402344 224.925781 C 101.953125 224.925781 94.269531 217.238281 94.269531 207.792969 C 94.269531 202.109375 91.054688 196.914062 85.972656 194.375 C 80.886719 191.835938 74.804688 192.386719 70.257812 195.800781 C 48.925781 211.824219 31.25 232.820312 19.140625 256.519531 C 6.441406 281.382812 0 308.234375 0 336.335938 C 0 433.195312 78.804688 512 175.664062 512 C 272.527344 512 351.335938 433.195312 351.335938 336.332031 C 351.335938 289.410156 333.058594 245.296875 299.882812 212.117188 Z M 267.042969 449.683594 C 242.035156 469.882812 210.238281 482 175.664062 482 C 141.039062 482 109.203125 469.847656 84.179688 449.597656 C 79.78125 438.34375 77.480469 426.257812 77.480469 413.8125 C 77.480469 387.585938 87.691406 362.929688 106.238281 344.386719 L 165.0625 285.5625 C 167.875 282.746094 171.691406 281.167969 175.667969 281.167969 C 179.648438 281.167969 183.460938 282.746094 186.273438 285.5625 L 245.097656 344.386719 C 273.515625 372.804688 280.816406 414.445312 267.042969 449.683594 Z M 267.042969 449.683594 " stroke="none" fillRule="nonzero" fillOpacity="1" />
         </g>
         </svg>
-            <div className="journey-card-text">
+            <div className="text-content journey-card-text">
             Passionate about bringing ideas to life. Designing and creating transformation in technology, business and life
         </div>
         </div>

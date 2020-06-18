@@ -1,6 +1,7 @@
 .main-header {
     grid-column: content-start / content-end;
     display: grid;
+    gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
     color: $theme1-color-main-text;

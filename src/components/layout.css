@@ -55,6 +55,7 @@ a {
 .main-header {
   grid-column: content-start / content-end;
   display: grid;
+  gap: 4rem;
   grid-template-columns: repeat(2, 1fr);
   padding: 2rem;
   color: #dddfd4;
@@ -228,7 +229,7 @@ h1 {
   fill: #3fb0ac; }
 
 .journey-card-text {
-  font-size: 2rem; }
+  text-align: left; }
 
 .content-text {
   padding: 5rem; }

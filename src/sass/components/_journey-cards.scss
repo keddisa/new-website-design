@@ -4,6 +4,7 @@
     grid-gap: 3rem;
     grid-row-gap: 5rem;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    
 
     @media only screen and (max-width: $bp-large) {
         margin: 5rem;
@@ -30,7 +31,7 @@
 }
 
 .journey-card-text {
-    font-size: 2rem;
+    text-align: left;
 }
 
 .content-text{
