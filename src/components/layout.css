@@ -45,6 +45,12 @@ a {
   align-self: center;
   justify-self: center;
   text-align: center; }
+  @media only screen and (max-width: 46.8em) {
+    .text-content {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 37em) {
+    .text-content {
+      font-size: 3rem; } }
 
 .main-header {
   grid-column: content-start / content-end;
