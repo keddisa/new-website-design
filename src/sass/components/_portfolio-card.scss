@@ -24,10 +24,18 @@
     grid-template-columns: 1fr 3fr;
 }
 
+.links-title {
+    justify-self: start !important;
+    align-self: start !important;
+}
 .portfolio-card-links-icons {
     display: grid;
     padding: 0 5rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.link-text {
+    justify-self: start;
 }
 
 .portfolio-card-technologies {
@@ -59,9 +67,16 @@
 
 }
 
-.portfolio-card-icon {
-    width: 5rem;
-    justify-self: center;
+.portfolio-card-cta {
+    background-color: $theme4-color-secondary;
+    height: 5rem;
+    width: 25rem;
+    border-radius: 2.8rem;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 2rem;
+    margin: 1rem;
+    padding: .6rem;
     cursor: pointer;
     transition: all .3s;
   
@@ -72,6 +87,10 @@
   &:active {
     transform: translateY(-.1rem) scale(1.01);
   }
+}
+
+.portfolio-card-icon {
+    width: 5rem;
 }
 
 .portfolio-card-line {
