@@ -7,6 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { motion } from "framer-motion"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -24,17 +25,20 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="app">
+    <motion.div className="app"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1}}
+            transition={{ duration: 2 }}>
       <Header/>
         <main className="main-content">{children}</main>
         <footer className="footer">
-          <div>
+          <div className="text-content">
             © {new Date().getFullYear()}, Built by
             {` `}
             <a id="footer-link" href="https://www.andrewkeddis.com">Andrew Keddis</a>
           </div>
         </footer>
-      </div>
+      </motion.div>
   )
 }
 

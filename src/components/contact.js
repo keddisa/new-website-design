@@ -52,6 +52,7 @@ const Contact = () => {
 
                 </a>
             </div>
+            <a href="https://storage.googleapis.com/2005_andrew-keddis-resume/resume.pdf" target="_blank" className="resume-link text-content">Click to download Andrew's Resume</a>
         </div>
         <TitleAside titleOne="GET IN"
                     titleTwo="TOUCH"
