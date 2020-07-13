@@ -26,7 +26,7 @@ body {
   @media only screen and (max-width: 37em) {
     body {
       padding: 2rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26em) {
     body {
       padding: 1rem; } }
 
@@ -57,7 +57,23 @@ a {
       font-size: 2.5rem; } }
   @media only screen and (max-width: 37em) {
     .text-content {
-      font-size: 3rem; } }
+      font-size: 2rem; } }
+  @media only screen and (max-width: 26em) {
+    .text-content {
+      font-size: 1.5rem; } }
+
+.text-content-large {
+  font-size: 4rem;
+  line-height: 16rem;
+  align-self: center;
+  justify-self: center;
+  text-align: center; }
+  @media only screen and (max-width: 26em) {
+    .text-content-large {
+      line-height: 8rem;
+      font-size: 1.8rem;
+      padding-right: 1rem;
+      padding-left: 1rem; } }
 
 .main-header {
   grid-column: content-start / content-end;
@@ -72,13 +88,12 @@ a {
       grid-template-columns: 12rem 1fr;
       margin: 0;
       padding: 0; } }
-
-.text-content-large {
-  font-size: 4rem;
-  line-height: 16rem;
-  align-self: center;
-  justify-self: center;
-  text-align: center; }
+  @media only screen and (max-width: 26em) {
+    .main-header {
+      grid-template-columns: 6rem 1fr; } }
+  @media only screen and (max-width: 23.5em) {
+    .main-header {
+      grid-template-columns: 4rem 1fr; } }
 
 .my-playground {
   grid-column: content-start / content-end;
@@ -90,6 +105,12 @@ a {
   @media only screen and (max-width: 46.8em) {
     .my-playground {
       grid-template-columns: 1fr 12rem; } }
+  @media only screen and (max-width: 26em) {
+    .my-playground {
+      grid-template-columns: 1fr 6rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .my-playground {
+      grid-template-columns: 1fr 4rem; } }
 
 .title-aside-main {
   display: grid;
@@ -123,11 +144,32 @@ a {
     .title-two-vertical {
       display: block;
       margin: 2rem; } }
+  @media only screen and (max-width: 37em) {
+    .title-one-vertical,
+    .title-two-vertical {
+      margin: 1.5rem; } }
+  @media only screen and (max-width: 26em) {
+    .title-one-vertical,
+    .title-two-vertical {
+      margin: 1rem; } }
 
 h1 {
   margin: 0;
   line-height: 8rem;
   font-size: 11rem; }
+  @media only screen and (max-width: 65em) {
+    h1 {
+      line-height: 7rem;
+      font-size: 9rem; } }
+  @media only screen and (max-width: 37em) {
+    h1 {
+      line-height: normal; } }
+  @media only screen and (max-width: 26em) {
+    h1 {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 23.5em) {
+    h1 {
+      font-size: 3rem; } }
 
 .justify-right {
   text-align: end;
@@ -163,9 +205,18 @@ h1 {
   padding: 2rem 2rem 0 2rem;
   color: #c89666;
   background: linear-gradient(to right bottom, rgba(45, 84, 94, 0.9), rgba(18, 52, 59, 0.9)); }
+  @media only screen and (max-width: 65em) {
+    .contact {
+      padding: 2rem 0rem 0 0rem; } }
   @media only screen and (max-width: 46.8em) {
     .contact {
       grid-template-columns: 1fr 12rem; } }
+  @media only screen and (max-width: 26em) {
+    .contact {
+      grid-template-columns: 1fr 6rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .contact {
+      grid-template-columns: 1fr 5rem; } }
 
 .contact-main {
   display: grid;
@@ -175,6 +226,15 @@ h1 {
   gap: 10rem;
   fill: #c89666;
   margin: 5rem; }
+  @media only screen and (max-width: 46.8em) {
+    .contact-main {
+      margin: 3rem 2rem; } }
+  @media only screen and (max-width: 46.8em) {
+    .contact-main {
+      margin: 3rem 1rem; } }
+  @media only screen and (max-width: 26em) {
+    .contact-main {
+      margin: 2rem 0rem; } }
 
 .email-and-number {
   display: grid;
@@ -182,13 +242,37 @@ h1 {
   gap: 3rem;
   height: 4rem;
   margin: 5rem 0; }
+  @media only screen and (max-width: 26em) {
+    .email-and-number {
+      gap: 1.5rem; } }
+  @media only screen and (max-width: 26em) {
+    .email-and-number {
+      gap: 1rem; } }
 
 .email-and-number-icon {
   width: 5rem;
   align-self: center; }
+  @media only screen and (max-width: 37em) {
+    .email-and-number-icon {
+      width: 4rem; } }
+  @media only screen and (max-width: 26em) {
+    .email-and-number-icon {
+      width: 3rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .email-and-number-icon {
+      width: 2.2rem; } }
 
 .email-and-number-text {
   height: 10rem; }
+  @media only screen and (max-width: 65em) {
+    .email-and-number-text {
+      height: 9rem; } }
+  @media only screen and (max-width: 26em) {
+    .email-and-number-text {
+      height: 4rem; } }
+  @media only screen and (max-width: 26em) {
+    .email-and-number-text {
+      height: 3.8rem; } }
 
 .contact-icons {
   display: grid;
@@ -197,13 +281,17 @@ h1 {
   gap: 5rem;
   grid-template-columns: 4rem 4rem 4.1rem 4rem;
   fill: black !important; }
+  @media only screen and (max-width: 26em) {
+    .contact-icons {
+      margin: 15rem 2rem;
+      gap: 3rem; } }
 
 .footer {
   background-color: #c89666;
   color: #2d545e;
   grid-column: content-start / content-end;
   display: grid;
-  grid-template-columns: 50% 1fr;
+  grid-template-columns: 1fr;
   padding: 3rem 2rem; }
 
 .header {
@@ -224,6 +312,13 @@ h1 {
       padding-bottom: 5rem; } }
   @media only screen and (max-width: 37em) {
     .journey-cards {
+      margin: 3rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      padding-bottom: 5rem; } }
+  @media only screen and (max-width: 26em) {
+    .journey-cards {
+      margin: .5rem;
       padding-right: 0rem;
       padding-left: 0rem;
       padding-bottom: 5rem; } }
@@ -232,9 +327,13 @@ h1 {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 4rem 1fr; }
+  @media only screen and (max-width: 26em) {
+    .journey-card {
+      grid-template-columns: 3rem 1fr; } }
 
 .journey-icon {
-  fill: #3fb0ac; }
+  fill: #3fb0ac;
+  width: 100%; }
 
 .journey-card-text {
   text-align: left; }
@@ -258,13 +357,16 @@ h1 {
   @media only screen and (max-width: 46.8em) {
     .my-journey {
       grid-template-columns: 12rem 1fr; } }
-
-.text-content-large {
-  font-size: 4rem;
-  line-height: 16rem;
-  align-self: center;
-  justify-self: center;
-  text-align: center; }
+  @media only screen and (max-width: 37em) {
+    .my-journey {
+      grid-template-columns: 9rem 1fr;
+      padding: 2rem 1rem; } }
+  @media only screen and (max-width: 26em) {
+    .my-journey {
+      grid-template-columns: 6rem 1fr; } }
+  @media only screen and (max-width: 23.5em) {
+    .my-journey {
+      grid-template-columns: 4rem 1fr; } }
 
 .main-content {
   display: grid;
@@ -281,6 +383,13 @@ h1 {
   @media only screen and (max-width: 46.8em) {
     .my-portfolio {
       grid-template-columns: 1fr 12rem; } }
+  @media only screen and (max-width: 26em) {
+    .my-portfolio {
+      grid-template-columns: 1fr 6rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .my-portfolio {
+      grid-template-columns: 1fr 4rem;
+      padding: 1rem 1rem 0 .5rem; } }
 
 .portfolio {
   display: grid;
@@ -302,6 +411,9 @@ h1 {
   display: grid;
   grid-gap: 1rem;
   font-size: 1.2rem; }
+  @media only screen and (max-width: 26em) {
+    .portfolio-card-content {
+      padding: 0 .5rem 2rem; } }
 
 .portfolio-card-links {
   display: grid;
@@ -316,6 +428,15 @@ h1 {
   display: grid;
   padding: 0 5rem;
   grid-template-columns: 1fr; }
+  @media only screen and (max-width: 37em) {
+    .portfolio-card-links-icons {
+      padding: 0 3rem; } }
+  @media only screen and (max-width: 26em) {
+    .portfolio-card-links-icons {
+      padding: 0 2rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .portfolio-card-links-icons {
+      padding: 0rem; } }
 
 .link-text {
   justify-self: start; }
@@ -329,9 +450,12 @@ h1 {
 
 .portfolio-card-tech-icons {
   display: grid;
-  grid-gap: 3rem;
+  gap: 3rem;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 3rem); }
+  @media only screen and (max-width: 26em) {
+    .portfolio-card-tech-icons {
+      gap: 1.5rem; } }
 
 .portfolio-card-tech-icon {
   border: black;
@@ -342,6 +466,9 @@ h1 {
   .portfolio-card-tech-icon:hover {
     transform: translateY(-0.2rem) scale(1.03);
     filter: brightness(70%); }
+  @media only screen and (max-width: 26em) {
+    .portfolio-card-tech-icon {
+      width: 3rem; } }
 
 .portfolio-card-cta {
   background-color: #CAFAFE;
@@ -360,9 +487,25 @@ h1 {
     filter: brightness(70%); }
   .portfolio-card-cta:active {
     transform: translateY(-0.1rem) scale(1.01); }
+  @media only screen and (max-width: 26em) {
+    .portfolio-card-cta {
+      height: 3rem;
+      width: 15rem;
+      margin: .5rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .portfolio-card-cta {
+      height: 2.5rem;
+      width: 13rem;
+      gap: 1rem; } }
 
 .portfolio-card-icon {
   width: 5rem; }
+  @media only screen and (max-width: 26em) {
+    .portfolio-card-icon {
+      width: 3rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .portfolio-card-icon {
+      width: 2.5rem; } }
 
 .portfolio-card-line {
   justify-self: center;
@@ -377,6 +520,9 @@ h1 {
   align-content: center;
   justify-content: center;
   margin: 5rem 0; }
+  @media only screen and (max-width: 46.8em) {
+    .skills {
+      margin-right: 1.5rem; } }
 
 #hexGrid {
   display: flex;
@@ -532,18 +678,30 @@ h1 {
   @media only screen and (max-width: 46.8em) {
     .testimonials {
       grid-template-columns: 12rem 1fr; } }
+  @media only screen and (max-width: 26em) {
+    .testimonials {
+      grid-template-columns: 6rem 1fr; } }
+  @media only screen and (max-width: 23.5em) {
+    .testimonials {
+      grid-template-columns: 4rem 1fr; } }
 
 .testimonial-card {
   display: grid;
   grid-template-rows: repeat(4, min-content);
   grid-gap: 3rem;
   padding: 4rem; }
+  @media only screen and (max-width: 26em) {
+    .testimonial-card {
+      padding: 4rem 2rem; } }
 
 .testimonial-headshot {
   width: 15rem;
   border-radius: 50%;
   justify-self: center;
   align-self: center; }
+  @media only screen and (max-width: 26em) {
+    .testimonial-headshot {
+      width: 10rem; } }
 
 .testimonial-text {
   text-align: left; }

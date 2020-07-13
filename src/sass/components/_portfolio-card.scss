@@ -15,6 +15,10 @@
     display: grid;
     grid-gap: 1rem;
     font-size: 1.2rem;
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 0 .5rem 2rem;
+    }  
 }
 
 
@@ -32,6 +36,18 @@
     display: grid;
     padding: 0 5rem;
     grid-template-columns: 1fr;
+
+    @media only screen and (max-width: $bp-medium) {
+        padding: 0 3rem;
+    }  
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 0 2rem;
+    }  
+
+    @media only screen and (max-width: $bp-x-small) {
+        padding: 0rem;
+    } 
 }
 
 .link-text {
@@ -48,9 +64,12 @@
 
 .portfolio-card-tech-icons {
     display: grid;
-    grid-gap: 3rem;
+    gap: 3rem;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 3rem);
+    @media only screen and (max-width: $bp-small) {
+        gap: 1.5rem;
+    }
 }
 
 .portfolio-card-tech-icon {
@@ -64,6 +83,9 @@
       transform: translateY(-.2rem) scale(1.03); 
       filter: brightness(70%);  
   }
+  @media only screen and (max-width: $bp-small) {
+    width: 3rem;
+}
 
 }
 
@@ -87,10 +109,28 @@
   &:active {
     transform: translateY(-.1rem) scale(1.01);
   }
+
+    @media only screen and (max-width: $bp-small) {
+        height: 3rem;
+        width: 15rem;
+        margin: .5rem;
+    }
+
+    @media only screen and (max-width: $bp-x-small) {
+        height: 2.5rem;
+        width: 13rem;
+        gap: 1rem;
+    }
 }
 
 .portfolio-card-icon {
     width: 5rem;
+    @media only screen and (max-width: $bp-small) {
+        width: 3rem;
+    }
+    @media only screen and (max-width: $bp-x-small) {
+        width: 2.5rem;
+    }
 }
 
 .portfolio-card-line {

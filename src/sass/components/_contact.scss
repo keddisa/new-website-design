@@ -6,9 +6,22 @@
     color: $theme6-color-main-text;
     background: linear-gradient(to right bottom, rgba($theme6-color-background-primary, .9), rgba($theme6-color-background-secondary, .9));
 
+    @media only screen and (max-width: $bp-x-large) {
+        padding: 2rem 0rem 0 0rem;
+    }
+
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: 1fr 12rem;
     }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 1fr 6rem;
+    }
+
+    @media only screen and (max-width: $bp-x-small) {
+        grid-template-columns: 1fr 5rem;
+    }
+
 }
 
 .contact-main {
@@ -19,6 +32,18 @@
     gap: 10rem;
     fill: $theme6-color-main-text;
     margin: 5rem;
+
+    @media only screen and (max-width: $bp-large) {
+        margin: 3rem 2rem;
+    } 
+
+    @media only screen and (max-width: $bp-large) {
+        margin: 3rem 1rem;
+    } 
+
+    @media only screen and (max-width: $bp-small) {
+        margin: 2rem 0rem;
+    }   
 }
 
 .email-and-number {
@@ -27,15 +52,42 @@
     gap: 3rem;
     height: 4rem;
     margin: 5rem 0;
+    @media only screen and (max-width: $bp-small) {
+        gap: 1.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        gap: 1rem;
+    }
 }
 
 .email-and-number-icon {
     width: 5rem;
     align-self: center;
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-x-small) {
+        width: 2.2rem;
+    }
 }
 
 .email-and-number-text {
     height: 10rem;
+    @media only screen and (max-width: $bp-x-large) {
+        height: 9rem; 
+    }
+    @media only screen and (max-width: $bp-small) {
+        height: 4rem; 
+    }
+    @media only screen and (max-width: $bp-small) {
+        height: 3.8rem; 
+    }
 }
 
 .contact-icons{
@@ -45,5 +97,10 @@
     gap: 5rem;
     grid-template-columns: 4rem 4rem 4.1rem 4rem;
     fill: black !important;
+
+    @media only screen and (max-width: $bp-small) {
+        margin: 15rem 2rem; 
+        gap: 3rem;
+    }
 }
 

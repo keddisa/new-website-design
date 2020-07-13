@@ -12,13 +12,15 @@
         margin:0;
         padding: 0;
     }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 6rem 1fr;
+    }
+
+    @media only screen and (max-width: $bp-x-small) {
+        grid-template-columns: 4rem 1fr;
+    }
 }
 
-.text-content-large {
-    font-size: 4rem;
-    line-height: 16rem;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-}
+
 

@@ -34,12 +34,31 @@
         display: block;
         margin: 2rem;
     }
+    @media only screen and (max-width: $bp-medium) {
+        margin: 1.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        margin: 1rem;
+    }
 }
 
 h1 {
     margin: 0;
     line-height: 8rem;
     font-size: 11rem;
+    @media only screen and (max-width: $bp-x-large) {
+        line-height: 7rem;
+        font-size: 9rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        line-height: normal;
+    }
+    @media only screen and (max-width: $bp-small) {
+        font-size: 4rem;
+    }
+    @media only screen and (max-width: $bp-x-small) {
+        font-size: 3rem;
+    }
 }
 
 .justify-right {

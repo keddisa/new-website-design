@@ -5,11 +5,11 @@ import Technologies from '../technologies';
 const Portfolio = () => {
     const projects = [
         {
-            title: "Concentration Game",
-            description: "Test your concentration. Two player game developed with React and React Hooks",
-            technologies: [Technologies.html, Technologies.css, Technologies.javascript, Technologies.react],
-            githubLink: "https://github.com/keddisa/concentration-game-react",
-            liveLink: 'https://shinkei-suijaku.s3.us-east-2.amazonaws.com/index.html'
+            title: "MineSweeper Game",
+            description: "A game that never gets old! Brought to you by React and Typescript",
+            technologies: [Technologies.html, Technologies.css, Technologies.javascript, Technologies.react, Technologies.typescript],
+            githubLink: "https://github.com/keddisa/minesweeper",
+            liveLink: 'https://keddisa.github.io/minesweeper/'
         },
         {
             title: "Concentration Game",

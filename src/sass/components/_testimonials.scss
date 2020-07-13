@@ -8,5 +8,13 @@
     @media only screen and (max-width: $bp-large) {
         grid-template-columns: 12rem 1fr;
     }
+
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 6rem 1fr;
+    }
+
+    @media only screen and (max-width: $bp-x-small) {
+        grid-template-columns: 4rem 1fr;
+    }
 }
 

@@ -14,9 +14,17 @@
     }
 
     @media only screen and (max-width: $bp-medium) {
-       padding-right: 0rem;
-       padding-left: 0rem;
-       padding-bottom: 5rem;
+        margin: 3rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        margin: .5rem;
+        padding-right: 0rem;
+        padding-left: 0rem;
+        padding-bottom: 5rem;
     }
 }
 
@@ -24,10 +32,14 @@
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: 4rem 1fr;
+    @media only screen and (max-width: $bp-small) {
+        grid-template-columns: 3rem 1fr;
+    }
 }
 
 .journey-icon {
     fill: $color-primary;
+    width: 100%;
 }
 
 .journey-card-text {

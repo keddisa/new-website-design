@@ -24,7 +24,7 @@ body {
 .app {
     display:grid;
     grid-template-columns: [full-start] 1fr [content-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [content-end] 1fr [full-end];
-}
+} 
 
 .main {
     display: grid;
@@ -55,7 +55,26 @@ a{
     }
 
     @media only screen and (max-width: $bp-medium) {
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.5rem;
+    }
+}
+
+.text-content-large {
+    font-size: 4rem;
+    line-height: 16rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+        line-height: 8rem;
+        font-size: 1.8rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 }
 
